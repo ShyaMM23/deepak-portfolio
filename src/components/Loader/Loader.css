@@ -1,0 +1,34 @@
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 32px;
+
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.loader__top,
+.loader__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.loader__bottom {
+  font-family: var(--font-mono);
+}
+
+.loader__progress {
+  color: var(--color-accent);
+  font-size: 18px;
+}

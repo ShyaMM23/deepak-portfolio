@@ -1,0 +1,21 @@
+:root {
+  /* Colors */
+  --color-bg: #0a0a0a;
+  --color-bg-soft: #111111;
+  --color-text: #f4f1eb;
+  --color-text-muted: #8b8b8b;
+  --color-accent: #c6ff4a;
+  --color-border: #292929;
+
+  /* Typography */
+  --font-display: "Arial", sans-serif;
+  --font-body: "Arial", sans-serif;
+  --font-mono: "Courier New", monospace;
+
+  /* Layout */
+  --container-width: 1400px;
+  --page-padding: 32px;
+
+  /* Animation */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}

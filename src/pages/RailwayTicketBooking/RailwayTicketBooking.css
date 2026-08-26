@@ -1,0 +1,364 @@
+.railway {
+  background: #f4f1eb;
+  color: #0a0a0a;
+}
+
+.railway__hero {
+  min-height: 100svh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 140px 32px 32px;
+}
+
+.railway__top,
+.railway__bottom {
+  display: flex;
+  justify-content: space-between;
+
+  font-family: var(--font-mono);
+
+  font-size: 10px;
+
+  letter-spacing: 0.08em;
+
+  color: #666;
+}
+
+.railway__top {
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid rgba(10, 10, 10, 0.2);
+}
+
+.railway__title {
+  margin: 30px 0 0;
+
+  font-size: clamp(70px, 14vw, 210px);
+
+  line-height: 0.78;
+
+  letter-spacing: -0.09em;
+}
+
+.railway__intro {
+  max-width: 500px;
+
+  margin: 60px 0 0 30%;
+
+  font-size: 24px;
+
+  line-height: 1.05;
+}
+
+.railway__bottom {
+  padding-top: 20px;
+
+  border-top: 1px solid rgba(10, 10, 10, 0.2);
+}
+
+.railway__section {
+  padding: 180px 32px;
+}
+
+.railway__label {
+  display: flex;
+
+  gap: 30px;
+
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid rgba(10, 10, 10, 0.2);
+
+  font-family: var(--font-mono);
+
+  font-size: 10px;
+}
+
+.railway__overview {
+  display: grid;
+
+  grid-template-columns: 1.3fr 1fr;
+
+  gap: 100px;
+
+  padding-top: 120px;
+}
+
+.railway__overview h2,
+.railway__concept h2,
+.railway__technology h2 {
+  margin: 0;
+
+  font-size: clamp(60px, 9vw, 140px);
+
+  line-height: 0.8;
+
+  letter-spacing: -0.08em;
+}
+
+.railway__overview p,
+.railway__concept p {
+  max-width: 500px;
+
+  margin-bottom: 30px;
+
+  font-size: 22px;
+
+  line-height: 1.15;
+}
+
+.railway__dark {
+  padding: 180px 32px;
+
+  background: #0a0a0a;
+
+  color: #f4f1eb;
+}
+
+.railway__dark .railway__label {
+  border-color: #292929;
+
+  color: #888;
+}
+
+.railway__concurrency {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+
+  max-width: 1000px;
+
+  margin: 120px auto 0;
+}
+
+.railway__train,
+.railway__lock,
+.railway__requests {
+  padding: 30px;
+
+  border: 1px solid #292929;
+
+  min-height: 220px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+.railway__train span,
+.railway__lock span {
+  font-family: var(--font-mono);
+
+  font-size: 10px;
+
+  color: var(--color-accent);
+}
+
+.railway__train strong,
+.railway__lock strong {
+  font-size: 35px;
+
+  letter-spacing: -0.06em;
+}
+
+.railway__requests {
+  grid-column: span 2;
+
+  flex-direction: row;
+
+  align-items: center;
+
+  justify-content: space-around;
+
+  min-height: 120px;
+}
+
+.railway__requests span {
+  padding: 12px 18px;
+
+  border: 1px solid #444;
+
+  border-radius: 100px;
+
+  font-family: var(--font-mono);
+
+  font-size: 10px;
+}
+
+.railway__technology {
+  padding-top: 120px;
+}
+
+.railway__technology h2 {
+  margin-bottom: 60px;
+}
+
+.railway__technology > div {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+}
+
+.railway__technology span {
+  padding: 15px 20px;
+
+  border: 1px solid rgba(10, 10, 10, 0.25);
+
+  border-radius: 100px;
+
+  font-family: var(--font-mono);
+
+  font-size: 10px;
+}
+
+.railway__visual {
+  min-height: 70vh;
+
+  background: #151515;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.railway__ticket {
+  width: 350px;
+
+  min-height: 220px;
+
+  padding: 30px;
+
+  background: #f4f1eb;
+
+  color: #0a0a0a;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  transform: rotate(-4deg);
+}
+
+.railway__ticket span,
+.railway__ticket small {
+  font-family: var(--font-mono);
+
+  font-size: 10px;
+}
+
+.railway__ticket strong {
+  font-size: 40px;
+
+  letter-spacing: -0.06em;
+}
+
+.railway__concept {
+  display: grid;
+
+  grid-template-columns: 1.3fr 1fr;
+
+  gap: 100px;
+
+  padding-top: 120px;
+}
+
+.railway__end {
+  min-height: 60vh;
+
+  padding: 100px 32px;
+
+  background: #0a0a0a;
+
+  color: #f4f1eb;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  gap: 30px;
+}
+
+.railway__end span {
+  font-family: var(--font-mono);
+
+  font-size: 10px;
+
+  color: #888;
+}
+
+.railway__end a {
+  font-size: clamp(50px, 8vw, 120px);
+
+  line-height: 0.85;
+
+  letter-spacing: -0.07em;
+
+  transition: color 0.3s ease;
+}
+
+.railway__end a:hover {
+  color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  .railway__hero {
+    padding: 110px 20px 20px;
+  }
+
+  .railway__title {
+    font-size: clamp(65px, 20vw, 130px);
+  }
+
+  .railway__intro {
+    margin: 40px 0 0;
+
+    font-size: 20px;
+  }
+
+  .railway__section,
+  .railway__dark {
+    padding: 100px 20px;
+  }
+
+  .railway__overview,
+  .railway__concept {
+    grid-template-columns: 1fr;
+
+    gap: 60px;
+
+    padding-top: 80px;
+  }
+
+  .railway__concurrency {
+    grid-template-columns: 1fr;
+
+    margin-top: 80px;
+  }
+
+  .railway__requests {
+    grid-column: auto;
+
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .railway__ticket {
+    width: 280px;
+  }
+}

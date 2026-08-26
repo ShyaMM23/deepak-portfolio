@@ -1,0 +1,363 @@
+/* =================================
+   CERTIFICATIONS
+================================= */
+
+.certifications {
+  background: var(--color-bg);
+
+  color: var(--color-text);
+}
+
+
+/* =================================
+   TOP
+================================= */
+
+.certifications__top {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding-bottom: 24px;
+
+  border-bottom: 1px solid var(--color-border);
+
+  font-family: var(--font-mono);
+
+  font-size: 10px;
+
+  letter-spacing: 0.08em;
+
+  color: var(--color-text-muted);
+}
+
+
+/* =================================
+   HEADING
+================================= */
+
+.certifications__heading {
+  padding: 100px 0 140px;
+}
+
+.certifications__heading-mask {
+  overflow: hidden;
+
+  width: 100%;
+}
+
+.certifications__heading-line {
+  display: block;
+
+  width: 100%;
+
+  margin: 0;
+
+  font-size: clamp(70px, 14vw, 210px);
+
+  line-height: 0.78;
+
+  letter-spacing: -0.09em;
+
+  font-weight: 600;
+
+  color: var(--color-text);
+
+  white-space: nowrap;
+}
+
+.certifications__heading-line--outline {
+  color: transparent;
+
+  -webkit-text-stroke: 1px var(--color-text);
+}
+
+
+/* =================================
+   LIST
+================================= */
+
+.certifications__list {
+  border-top: 1px solid var(--color-border);
+}
+
+
+/* =================================
+   CERTIFICATION ITEM
+================================= */
+
+.certification {
+  display: grid;
+
+  grid-template-columns: 70px 1fr 140px 160px;
+
+  align-items: center;
+
+  gap: 30px;
+
+  min-height: 150px;
+
+  border-bottom: 1px solid var(--color-border);
+
+  transition:
+    padding 0.4s ease,
+    background 0.4s ease;
+}
+
+.certification:hover {
+  padding-left: 20px;
+
+  background: rgba(255, 255, 255, 0.025);
+}
+
+
+/* =================================
+   NUMBER
+================================= */
+
+.certification__number {
+  font-family: var(--font-mono);
+
+  font-size: 10px;
+
+  color: var(--color-accent);
+}
+
+
+/* =================================
+   MAIN
+================================= */
+
+.certification__main {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+
+/* =================================
+   CERTIFICATION NAME
+================================= */
+
+.certification__main h3 {
+  margin: 0;
+
+  font-size: clamp(24px, 3vw, 48px);
+
+  line-height: 0.9;
+
+  letter-spacing: -0.055em;
+
+  font-weight: 500;
+
+  color: var(--color-text);
+}
+
+
+/* =================================
+   ISSUER
+================================= */
+
+.certification__main span {
+  font-family: var(--font-mono);
+
+  font-size: 10px;
+
+  letter-spacing: 0.08em;
+
+  color: var(--color-text-muted);
+}
+
+
+/* =================================
+   DATE
+================================= */
+
+.certification__date {
+  font-family: var(--font-mono);
+
+  font-size: 10px;
+
+  letter-spacing: 0.08em;
+
+  text-align: right;
+
+  color: var(--color-text-muted);
+}
+
+
+/* =================================
+   ACTION
+================================= */
+
+.certification__action {
+  display: flex;
+
+  justify-content: flex-end;
+
+  align-items: center;
+}
+
+
+/* =================================
+   CREDENTIAL LINK
+================================= */
+
+.certification__credential {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  font-family: var(--font-mono);
+
+  font-size: 10px;
+
+  letter-spacing: 0.08em;
+
+  color: var(--color-text-muted);
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.certification__credential:hover {
+  color: var(--color-accent);
+
+  transform: translateX(5px);
+}
+
+
+/* =================================
+   ARROW
+================================= */
+
+.certification__arrow {
+  font-size: 18px;
+
+  color: var(--color-accent);
+
+  transition: transform 0.3s ease;
+}
+
+.certification__credential:hover .certification__arrow {
+  transform: translate(3px, -3px);
+}
+
+
+/* =================================
+   BOTTOM
+================================= */
+
+.certifications__bottom {
+  display: grid;
+
+  grid-template-columns: 1fr 2fr;
+
+  gap: 80px;
+
+  padding: 120px 0 20px;
+}
+
+.certifications__bottom > span {
+  font-family: var(--font-mono);
+
+  font-size: 10px;
+
+  letter-spacing: 0.08em;
+
+  color: var(--color-text-muted);
+}
+
+.certifications__bottom p {
+  max-width: 750px;
+
+  margin: 0;
+
+  font-size: clamp(24px, 3vw, 42px);
+
+  line-height: 1;
+
+  letter-spacing: -0.05em;
+
+  color: var(--color-text);
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 768px) {
+
+  .certifications__top {
+    gap: 20px;
+  }
+
+  .certifications__heading {
+    padding: 70px 0 90px;
+  }
+
+  .certifications__heading-line {
+    font-size: clamp(60px, 18vw, 120px);
+  }
+
+  .certification {
+    grid-template-columns: 40px 1fr;
+
+    gap: 15px;
+
+    min-height: 130px;
+
+    padding: 25px 0;
+  }
+
+  .certification:hover {
+    padding-left: 8px;
+  }
+
+  .certification__main h3 {
+    font-size: 25px;
+
+    line-height: 0.95;
+  }
+
+  .certification__date {
+    grid-column: 2;
+
+    text-align: left;
+
+    order: 3;
+  }
+
+  .certification__action {
+    grid-column: 2;
+
+    justify-content: flex-start;
+
+    order: 4;
+  }
+
+  .certification__credential {
+    font-size: 9px;
+  }
+
+  .certifications__bottom {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+
+    padding-top: 90px;
+  }
+
+  .certifications__bottom p {
+    font-size: 28px;
+  }
+
+}

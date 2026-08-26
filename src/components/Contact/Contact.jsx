@@ -46,10 +46,6 @@ function Contact() {
     return () => ctx.revert();
   }, []);
 
-  // Gmail compose URL
-  const emailUrl =
-    "https://mail.google.com/mail/?view=cm&fs=1&to=10727deepak@gmail.com";
-
   return (
     <section
       className="contact section"
@@ -94,9 +90,7 @@ function Contact() {
         {/* LET'S TALK CTA */}
 
         <a
-          href={emailUrl}
-          target="_blank"
-          rel="noopener noreferrer"
+          href="mailto:10727deepak@gmail.com"
           className="contact__cta"
         >
           <span>LET'S TALK</span>
@@ -114,9 +108,7 @@ function Contact() {
           {/* EMAIL */}
 
           <a
-            href={emailUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:10727deepak@gmail.com"
             className="contact__item"
           >
             <span className="contact__item-icon">

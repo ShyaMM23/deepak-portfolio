@@ -180,7 +180,7 @@ function Skills() {
           </span>
 
           <p>
-            I like learning by building —
+            I like learning by building 
             understanding the problem,
             experimenting with the technology,
             and turning the idea into something

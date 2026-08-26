@@ -1,5 +1,9 @@
 import { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 import Loader from "./components/Loader/Loader";
 import Navbar from "./components/Navbar/Navbar";
@@ -11,7 +15,6 @@ import Certifications from "./components/Certifications/Certifications";
 import Achievements from "./components/Achievements/Achievements";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-
 import CustomCursor from "./components/CustomCursor/CustomCursor";
 
 import CodeAnalyzer from "./pages/CodeAnalyzer/CodeAnalyzer";
@@ -45,23 +48,20 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/deepak-portfolio">
 
-      {/* Custom cursor */}
       <CustomCursor />
 
-      {/* Loader */}
       {loading && (
         <Loader
           onComplete={() => setLoading(false)}
         />
       )}
 
-      {/* Application */}
       {!loading && (
         <Routes>
 
-          {/* Home */}
+          {/* HOME */}
 
           <Route
             path="/"
@@ -69,7 +69,7 @@ function App() {
           />
 
 
-          {/* Code Analyzer */}
+          {/* CODE ANALYZER */}
 
           <Route
             path="/work/code-analyzer"
@@ -82,7 +82,7 @@ function App() {
           />
 
 
-          {/* Road Sign Detection */}
+          {/* ROAD SIGN DETECTION */}
 
           <Route
             path="/work/road-sign-detection"
@@ -95,7 +95,7 @@ function App() {
           />
 
 
-          {/* Inventory Management */}
+          {/* INVENTORY MANAGEMENT */}
 
           <Route
             path="/work/inventory-management"
@@ -108,7 +108,7 @@ function App() {
           />
 
 
-          {/* Railway Ticket Booking */}
+          {/* RAILWAY TICKET BOOKING */}
 
           <Route
             path="/work/railway-ticket-booking"

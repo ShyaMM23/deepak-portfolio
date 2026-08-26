@@ -24,7 +24,7 @@ const certifications = [
 
   {
     number: "03",
-    title: "ASSOCIATE IN IT FOUNDATIONS — JAVA",
+    title: "ASSOCIATE IN IT FOUNDATIONS JAVA",
     issuer: "INFOSYS SPRINGBOARD",
     date: "DEC 2025",
     credential: null,
@@ -225,7 +225,7 @@ function Certifications() {
           </span>
 
           <p>
-            Certifications are part of the process —
+            Certifications are part of the process
             a way to explore new technologies,
             strengthen fundamentals and keep
             learning beyond the classroom.

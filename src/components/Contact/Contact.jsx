@@ -15,7 +15,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Contact() {
   const contactRef = useRef(null);
-
+  const emailUrl ="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=10727deepak@gmail.com";
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.from(".contact__heading-line", {
@@ -45,10 +45,6 @@ function Contact() {
 
     return () => ctx.revert();
   }, []);
-
-  // Gmail compose URL
-  const emailUrl =
-    "https://mail.google.com/mail/?view=cm&fs=1&to=10727deepak@gmail.com";
 
   return (
     <section
@@ -91,13 +87,13 @@ function Contact() {
         </div>
 
 
-        {/* LET'S TALK CTA */}
+        {/* LET'S TALK */}
 
         <a
-          href={emailUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="contact__cta"
+        href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=10727deepak@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="contact__cta"
         >
           <span>LET'S TALK</span>
 
@@ -114,24 +110,16 @@ function Contact() {
           {/* EMAIL */}
 
           <a
-            href={emailUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="contact__item"
-          >
+          href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=10727deepak@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contact__item">
             <span className="contact__item-icon">
               <FiMail />
-            </span>
-
-            <span className="contact__item-label">
-              EMAIL
-            </span>
-
-            <span className="contact__item-value">
-              10727deepak@gmail.com
-            </span>
-
-            <FiArrowUpRight className="contact__item-arrow" />
+              </span>
+              <span className="contact__item-label">EMAIL</span>
+              <span className="contact__item-value">10727deepak@gmail.com</span>
+              <FiArrowUpRight className="contact__item-arrow" />
           </a>
 
 

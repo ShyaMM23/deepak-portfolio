@@ -90,7 +90,7 @@ function Contact() {
         {/* LET'S TALK */}
 
         <a
-        href={emailUrl}
+        href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=10727deepak@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
         className="contact__cta"
@@ -110,7 +110,7 @@ function Contact() {
           {/* EMAIL */}
 
           <a
-          href={emailUrl}
+          href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=10727deepak@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
           className="contact__item">

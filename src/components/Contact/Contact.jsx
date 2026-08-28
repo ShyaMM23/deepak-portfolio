@@ -87,10 +87,10 @@ function Contact() {
         </div>
 
 
-        {/* LET'S TALK CTA */}
+        {/* LET'S TALK */}
 
         <a
-          href="mailto:10727deepak@gmail.com"
+          href="mailto:10727deepak@gmail.com?subject=Portfolio%20Inquiry"
           className="contact__cta"
         >
           <span>LET'S TALK</span>

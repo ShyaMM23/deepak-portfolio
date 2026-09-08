@@ -75,7 +75,7 @@ function About() {
         <div className="about__content">
 
           <p className="about__line">
-            HI  I'M 
+            HI I'M 
           </p>
 
           <p className="about__line about__line--accent">
